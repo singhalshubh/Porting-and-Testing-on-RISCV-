@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "prj/app/prj.py", line 1293, in _start
+    sys.exit(main())
+  File "prj/app/prj.py", line 1285, in main
+    return SUBCOMMAND_TABLE[args.command](args)
+  File "prj/app/prj.py", line 1101, in build
+    return call_system_function(args, System.build)
+  File "prj/app/prj.py", line 1158, in call_system_function
+    return function(system, **extra_args)
+  File "prj/app/prj.py", line 811, in build
+    self.generate(copy_all_files=False)
+  File "prj/app/prj.py", line 802, in generate
+    i.post_prepare()
+  File "prj/app/prj.py", line 261, in _wrap
+    return func(self._system, self._config, *args, **kwargs)
+  File "prj/app/prj.py", line 399, in post_prepare
+    self._prepare_files(system, config, stage="post_prepare")
+  File "prj/app/prj.py", line 372, in _prepare_files
+    _prepare_template(input_path, output_path, file_obj.get('render', False), config)
+  File "prj/app/prj.py", line 409, in _prepare_template
+    pystache_render(input_path, output_path, config)
+  File "prj/app/prj.py", line 122, in pystache_render
+    with open(file_in, 'r') as inp:
+IsADirectoryError: [Errno 21] Is a directory: 'packages/riscv/'

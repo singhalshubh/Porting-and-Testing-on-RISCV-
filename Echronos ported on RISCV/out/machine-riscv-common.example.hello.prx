@@ -1,0 +1,22 @@
+<system>
+	
+  
+	<modules>
+		
+    
+		<module name="machine-riscv-common.build"/>
+		
+    
+		<module name="riscv.default-linker"/>
+		
+    
+		<module name="generic.debug"/>
+		
+    
+		<module name="generic.hello"/>
+		
+  
+	</modules>
+	
+
+</system>

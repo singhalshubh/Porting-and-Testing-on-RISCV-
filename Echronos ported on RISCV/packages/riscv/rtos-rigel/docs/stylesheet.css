@@ -1,0 +1,84 @@
+/*
+ * eChronos Real-Time Operating System
+ * Copyright (c) 2017, Commonwealth Scientific and Industrial Research
+ * Organisation (CSIRO) ABN 41 687 119 230.
+ *
+ * All rights reserved. CSIRO is willing to grant you a licence to the eChronos
+ * real-time operating system under the terms of the CSIRO_BSD_MIT license. See
+ * the file "LICENSE_CSIRO_BSD_MIT.txt" for details.
+ *
+ * @TAG(CSIRO_BSD_MIT)
+ */
+
+html {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 140%;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: bold;
+    page-break-before: always;
+    page-break-after: avoid;
+    color: DimGray;
+    padding-top: 5cm;
+    padding-bottom: 1cm;
+}
+
+h2 {
+    padding-top: 1em;
+    page-break-after: avoid;
+}
+
+h3 {
+    page-break-after: avoid;
+}
+
+h4 {
+    page-break-after: avoid;
+}
+
+.document_title {
+    font-size: 250%;
+    font-weight: bold;
+    padding-top: 5cm;
+    padding-bottom: 5cm;
+}
+
+p {
+    line-height: 140%;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+    border-bottom: 2px dashed Gray;
+}
+
+.toc {
+    font-size: 300%;
+    font-weight: bold;
+    page-break-before: always;
+    color: DimGray;
+    padding-top: 5cm;
+    padding-bottom: 1cm;
+}
+
+#TOC {
+}
+
+/* get central control over the formatting of APIs, but also allow to post process such elements in the source */
+.api {
+    font-family: monospace;
+}
+
+.codebox {
+    border: 1px solid Black;
+    background: LightGray;
+    padding: .5em .5em;
+    margin: 1px;
+    font-family: monospace;
+    font-size: 11pt;
+    page-break-inside: avoid;
+}

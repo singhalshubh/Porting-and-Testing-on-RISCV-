@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema>
+<entry default="false" name="internal_asserts" type="bool" />
+<entry default="8" name="taskid_size" type="int" />
+<entry auto_index_field="idx" name="tasks" type="list">
+    <entry name="task" type="dict">
+        <entry name="function" type="c_ident" />
+        <entry name="name" type="ident" />
+        <entry name="stack_size" type="int" />
+    <entry default="false" name="start" type="bool" />
+    </entry>
+</entry>
+<entry name="prefix" optional="true" type="ident" />
+<entry default="true" name="api_asserts" type="bool" />
+<entry name="fatal_error" optional="false" type="c_ident" />
+<entry default="[]" name="signal_labels" type="list">
+    <entry name="signal_label" type="dict">
+        <entry name="global" optional="true" type="bool" />
+        <entry name="tasks" optional="true" type="list">
+            <entry group="tasks" name="task" type="object" />
+        </entry>
+        <constraint name="constraint0" type="one_of">
+            <entry name="global">global</entry>
+            <entry name="tasks">tasks</entry>
+        </constraint>
+    </entry>
+</entry>
+</schema>

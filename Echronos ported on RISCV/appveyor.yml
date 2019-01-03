@@ -1,0 +1,34 @@
+#
+# eChronos Real-Time Operating System
+# Copyright (c) 2017, Commonwealth Scientific and Industrial Research
+# Organisation (CSIRO) ABN 41 687 119 230.
+#
+# All rights reserved. CSIRO is willing to grant you a licence to the eChronos
+# real-time operating system under the terms of the CSIRO_BSD_MIT license. See
+# the file "LICENSE_CSIRO_BSD_MIT.txt" for details.
+#
+# @TAG(CSIRO_BSD_MIT)
+#
+
+version: 1.0.{build}
+branches:
+    except:
+        - archive/*
+        - abandoned/*
+clone_depth: 1
+environment:
+    PATH: "%PATH%;C:\\Program Files\\Git\\cmd"
+    matrix:
+        - PYTHON: "C:\\Python36-x64\\python"
+        - PYTHON: "C:\\Python35-x64\\python"
+        # Python 3.4 and 3.4 are no longer officially supported.
+        # Therefore, the project also does not have to support them.
+        # However, we still test against those versions to learn when we break support for them.
+        - PYTHON: "C:\\Python34-x64\\python"
+        - PYTHON: "C:\\Python33-x64\\python"
+build_script: test_setup.bat
+test_script: test.bat
+artifacts:
+- path: packages\*\rtos-*\docs.pdf
+  name: documentation
+deploy: off
