@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/singhalshubh/porting-and-testing-on-riscv-/badge/master)](https://www.codefactor.io/repository/github/singhalshubh/porting-and-testing-on-riscv-/overview/master)
+
 # Porting and Testing on RISCV 
 
 1) Echronos has been ported by using the hello.c program in generic folder. Echronos has been ported successfully (for the first time on RISCV).</br>
