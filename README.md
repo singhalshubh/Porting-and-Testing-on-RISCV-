@@ -6,6 +6,23 @@
 Porting of eChronos RTOS on RISC-V Architecture : </br>
 eChronos is a formally verified Real Time Operating System (RTOS) designed for embedded micro-controllers. eChronos was targeted for tightly constrained devices without memory management units. Currently, eChronos is available on proprietary designs like ARM, PowerPC and Intel architectures. eChronos is adopted in safety critical systems like aircraft control system and medical implant devices. eChronos is one of the very few system software's not been ported to RISC-V. RISC-V is an open-source Instruction Set Architecture (ISA) that enables new era of processor development. Many standard Operating Systems, software tool chain have migrated to the RISC-V architecture. According to the latest trends, RISC-V is replacing many proprietary chips. As a secure RTOS, it is attractive to port on an open-source ISA. SHAKTI and PicoRV32 are some of the proven open-source RISC-V designs available. Now having a secure RTOS on an open-source hardware design, designed based on an open-source ISA makes it more interesting. In addition to this, the current architectures supported by eChronos are all proprietary designs and porting eChronos to the RISC-V architecture increases the secure system development as a whole. This paper, presents an idea of porting eChronos on a chip which is open-source and effective, thus reducing the cost of embedded systems. Designing a open-source system that is completely open-source reduces the overall cost, increased the security and can be critically reviewed. This paper explores the design and architecture aspect involved in porting eChronos to RISC-V. The authors have successfully ported eChronos to RISC-V architecture and verified it on spike. The port of RISC-V to eChronos is made available open-source by authors. Along with that, the safe removal of architectural dependencies and subsequent changes in eChronos are also analyzed.</br>
 </br>
+
+Running and Installation <br>
+After installing RISC-V toolchain and its dependencies(mentioned in the paper), follow these steps given below to run the repo : 
+<div class="bg-gray">
+  ./prj/app/prj.py build machine-riscv-common.example.hello
+(This will create the system image binary)
+</div>
+<div class="bg-gray">
+riscv-objdump  system > system.dump
+  </div>
+(This will create the system dump)
+<div class="bg-gray">
+spike -d pk hello > spike.dump
+(This will create the spike dump)
+</div> 
+# If you face any errors due to your "system configuration" or while installing this repo, feel free to email me at shubhendrapalsinghal@gmail.com or create an issue for the repo. I will respond to your query.
+
 Results : </br>
 Running the system dump of hello.c file gave an output : "Hello World" assuming the starting address of execution
 of program was 10000 on the architecture. RISC-V emulator has been designed in such a way that the address
