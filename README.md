@@ -1,7 +1,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/singhalshubh/porting-and-testing-on-riscv-/badge/master)](https://www.codefactor.io/repository/github/singhalshubh/porting-and-testing-on-riscv-/overview/master)
 
 # Porting eChronos on RISCV 
-# This project has been done in collaboration with Dr. V. Kamakoti, Dr. MJ Shankar Narayanan and Mr. Sathya at RISE Lab, Indian Institute of Technology, Madras.
+#### This project has been done in collaboration with Dr. V. Kamakoti, Dr. MJ Shankar Narayanan and Mr. Sathya at RISE Lab, Indian Institute of Technology, Madras.
 1) Echronos has been ported by using the hello.c program in generic folder. Echronos has been ported successfully (for the first time on RISCV).</br>
 Porting of eChronos RTOS on RISC-V Architecture : </br>
 eChronos is a formally verified Real Time Operating System (RTOS) designed for embedded micro-controllers. eChronos was targeted for tightly constrained devices without memory management units. Currently, eChronos is available on proprietary designs like ARM, PowerPC and Intel architectures. eChronos is adopted in safety critical systems like aircraft control system and medical implant devices. eChronos is one of the very few system software's not been ported to RISC-V. RISC-V is an open-source Instruction Set Architecture (ISA) that enables new era of processor development. Many standard Operating Systems, software tool chain have migrated to the RISC-V architecture. According to the latest trends, RISC-V is replacing many proprietary chips. As a secure RTOS, it is attractive to port on an open-source ISA. SHAKTI and PicoRV32 are some of the proven open-source RISC-V designs available. Now having a secure RTOS on an open-source hardware design, designed based on an open-source ISA makes it more interesting. In addition to this, the current architectures supported by eChronos are all proprietary designs and porting eChronos to the RISC-V architecture increases the secure system development as a whole. This paper, presents an idea of porting eChronos on a chip which is open-source and effective, thus reducing the cost of embedded systems. Designing a open-source system that is completely open-source reduces the overall cost, increased the security and can be critically reviewed. This paper explores the design and architecture aspect involved in porting eChronos to RISC-V. The authors have successfully ported eChronos to RISC-V architecture and verified it on spike. The port of RISC-V to eChronos is made available open-source by authors. Along with that, the safe removal of architectural dependencies and subsequent changes in eChronos are also analyzed.</br>
@@ -16,7 +16,7 @@ This will create the system dump. This command might differ according to the ris
 `spike -d pk hello > spike.dump` <br>
 This will create the spike dump. The installation path of pk might be different. Kindly refer to the document for more understanding.
  
-### If you face any errors due to your "system configuration" or while installing this repo, feel free to email me at shubhendrapalsinghal@gmail.com or  Mr. Sathya (Project Supervisor) at sathya281@gmail.com.
+##### If you face any errors due to your "system configuration" or while installing this repo, feel free to email me at shubhendrapalsinghal@gmail.com or  Mr. Sathya (Project Supervisor) at sathya281@gmail.com.
 
 Results : </br>
 Running the system dump of hello.c file gave an output : "Hello World" assuming the starting address of execution
