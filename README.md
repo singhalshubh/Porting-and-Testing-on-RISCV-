@@ -37,7 +37,7 @@ The sample program hello.c has only one external dependency i.e. print. This is 
 that can be used as a reference for further adaptability of complex programs. Extensive porting of libraries in
 eChronos can be done by modifying the files in the same way as the sample program file.
 
-For detailed anaylsis of how the porting was carried out, please see the paper https://arxiv.org/abs/1908.11648 accepted in **Springer LNCS Germany 2019**</br>
+For detailed anaylsis of how the porting was carried out, please see the paper https://arxiv.org/abs/1908.11648 or https://link.springer.com/chapter/10.1007/978-981-15-5341-7_96 accepted in Advances in Communication and Computational Technology. Lecture Notes in Electrical Engineering, vol 668. Springer, Singapore. https://doi.org/10.1007/978-981-15-5341-7_96.</br>
 
 2) Pthread library on RISCV was tested by using testP program which is a lock based algorithm.
 3) .dts link with proxykernel for compilation of user defined drivers.
